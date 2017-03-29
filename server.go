@@ -20,5 +20,5 @@ func main() {
     http.HandleFunc("/" + filePaths[i], mkHandler(filePaths[i]));
   }
 
-  log.Fatal(http.ListenAndServe(":8889", nil))
+  log.Fatal(http.ListenAndServe(":10001", nil))
 }
